@@ -4,8 +4,12 @@
 
     <!-- 수정삭제버튼 -->
     <div class="d-flex justify-content-end">
-        <button class="btn btn-secondary me-1">수정</button>
-        <button class="btn btn-outline-secondary">삭제</button>
+        <a href="/boards/1/update-form" class="btn me-1" style="background-color: #999AA0; color: white;">
+            수정
+        </a>
+        <form action="/boards/1/delete" method="post">
+            <button class="btn btn-outline-secondary">삭제</button>
+        </form>
     </div>
 
     <!-- 게시글내용 -->
